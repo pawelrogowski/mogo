@@ -89,6 +89,7 @@ hr {
   height: 5px;
   background-color: var(--pink);
   border-radius: 10px;
+  border: none;
 }
 
 input {
@@ -97,10 +98,6 @@ input {
   color: var(--gray);
 }
 input::-moz-placeholder {
-  font: italic 15px var(--third-font);
-  color: var(--gray-light);
-}
-input:-ms-input-placeholder {
   font: italic 15px var(--third-font);
   color: var(--gray-light);
 }
@@ -422,7 +419,6 @@ input:focus {
   align-items: center;
   justify-content: center;
   translate: 50% -100%;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   background-color: var(--yellow);
