@@ -96,6 +96,7 @@ input {
   padding: 13px 10px;
   border: 2px solid var(--gray-light);
   color: var(--gray);
+  background: var(--white);
 }
 input::-moz-placeholder {
   font: italic 15px var(--third-font);

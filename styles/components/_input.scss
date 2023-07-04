@@ -4,6 +4,7 @@ input {
   padding: 13px 10px;
   border: 2px solid $gray-light-color;
   color: $gray-color;
+  background: var(--white);
 
   &::placeholder {
     font: italic 15px $third-font;
