@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>MoGo</title>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="container hero__container">
+        <header class="header">
+          <h1 class="header__logo">MoGo</h1>
+
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Service</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="#">Work</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Contact</a>
+              </li>
+              <span class="nav__icons">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">
+                    <img
+                      class="nav__icon"
+                      src="assets/icons/cart.svg"
+                      alt="Cart icon" />
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">
+                    <img
+                      class="nav__icon"
+                      src="assets/icons/search.svg"
+                      alt="Search icon" />
+                  </a>
+                </li>
+              </span>
+            </ul>
+          </nav>
+
+          <button class="btn header__menu-button" aria-label="Navigation">
+            <img src="assets/icons/hamburger.svg" alt="Open menu icon" />
+            <img src="assets/icons/close.svg" alt="Close menu icon" />
+          </button>
+        </header>
+
+        <div class="hero__slogan">
+          <p>Creative Template</p>
+          <p>Welcome to MoGo</p>
+        </div>
+
+        <button class="hero__btn btn btn--primary" aria-label="Learn more">
+          Learn more
+        </button>
+      </div>
+    </section>
+
+    <main>
+      <div class="container">
+        <section class="services">
+          <div class="section-header">
+            <p>We work with</p>
+            <h2>Amazing services</h2>
+          </div>
+
+          <hr class="services__line" />
+
+          <div class="services__grid">
+            <article class="services__grid-element">
+              <img
+                class="element__icon"
+                src="assets/icons/alarm.svg"
+                alt="Alarm icon" />
+              <div class="element__content">
+                <p class="element__heading">Photography</p>
+                <p class="element__paragraph">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </article>
+
+            <article class="services__grid-element">
+              <img
+                class="element__icon"
+                src="assets/icons/chart.svg"
+                alt="Chart icon" />
+              <div class="element__content">
+                <p class="element__heading">Web design</p>
+                <p class="element__paragraph">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </article>
+
+            <article class="services__grid-element">
+              <img
+                class="element__icon"
+                src="assets/icons/screen.svg"
+                alt="Screen icon" />
+              <div class="element__content">
+                <p class="element__heading">Creativity</p>
+                <p class="element__paragraph">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </article>
+
+            <article class="services__grid-element">
+              <img
+                class="element__icon"
+                src="assets/icons/notepad.svg"
+                alt="Notepad icon" />
+              <div class="element__content">
+                <p class="element__heading">SEO</p>
+                <p class="element__paragraph">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </article>
+
+            <article class="services__grid-element">
+              <img
+                class="element__icon"
+                src="assets/icons/home.svg"
+                alt="Home icon" />
+              <div class="element__content">
+                <p class="element__heading">CSS/HTML</p>
+                <p class="element__paragraph">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </article>
+
+            <article class="services__grid-element">
+              <img
+                class="element__icon"
+                src="assets/icons/resize.svg"
+                alt="Resize icon" />
+              <div class="element__content">
+                <p class="element__heading">Digital</p>
+                <p class="element__paragraph">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="about">
+          <div class="section-header">
+            <p>Who we are</p>
+            <h2>Meet our team</h2>
+          </div>
+
+          <hr class="about__line" />
+
+          <p class="about__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+
+          <div class="gallery">
+            <div class="gallery__element">
+              <div class="gallery__img">
+                <img
+                  class="gallery__img--center"
+                  sizes="(max-width: 875px) 100vw, 875px"
+                  srcset="
+                    assets/photos/matthew/matthew,w_646.png 646w,
+                    assets/photos/matthew/matthew,w_723.png 723w,
+                    assets/photos/matthew/matthew,w_790.png 790w,
+                    assets/photos/matthew/matthew,w_853.png 853w,
+                    assets/photos/matthew/matthew,w_875.png 875w
+                  "
+                  src="matthew,w_875.png"
+                  alt="Matthew Dix Photo" />
+              </div>
+
+              <div class="gallery__image-description">
+                <p>Matthew Dix</p>
+                <p>Graphic Design</p>
+              </div>
+
+              <div class="socials">
+                <button class="socials__button btn" aria-label="Facebook">
+                  <img
+                    class="socials__icon"
+                    src="assets/icons/facebook.svg"
+                    alt="Facebook icon" />
+                </button>
+                <button class="socials__button btn" aria-label="Twitter">
+                  <img
+                    class="socials__icon"
+                    src="assets/icons/twitter.svg"
+                    alt="Twitter icon" />
+                </button>
+                <button class="socials__button btn" aria-label="Pintrest">
+                  <img
+                    class="socials__icon"
+                    src="assets/icons/pinterest.svg"
+                    alt="Pintrest icon" />
+                </button>
+                <button class="socials__button btn" aria-label="Instagram">
+                  <img
+                    class="socials__icon"
+                    src="assets/icons/instagram.svg"
+                    alt="Instagram icon" />
+                </button>
+              </div>
+            </div>
+
+            <div class="gallery__element">
+              <div class="gallery__img">
+                <img
+                  sizes="(max-width: 594px) 100vw, 594px"
+                  srcset="
+                    assets/photos/christopher/christopher,w_447.png 447w,
+                    assets/photos/christopher/christopher,w_505.png 505w,
+                    assets/photos/christopher/christopher,w_555.png 555w,
+                    assets/photos/christopher/christopher,w_594.png 594w
+                  "
+                  src="christopher,w_594.png"
+                  alt="Christopher Campbell Photo" />
+              </div>
+
+              <div class="gallery__image-description">
+                <p>Christopher Campbell</p>
+                <p>Branding/UX design</p>
+              </div>
+
+              <div class="socials">
+                <button class="socials__button btn" aria-label="Facebook">
+                  <img
+                    class="socials__icon"
+                    src="assets/icons/facebook.svg"
+                    alt="Facebook icon" />
+                </button>
+                <button class="socials__button btn" aria-label="Twitter">
+                  <img
+                    class="socials__icon"
+                    src="assets/icons/twitter.svg"
+                    alt="Twitter icon" />
+                </button>
+                <button class="socials__button btn" aria-label="Pintrest">
+                  <img
+                    class="socials__icon"
+                    src="assets/icons/pinterest.svg"
+                    alt="Pintrest icon" />
+                </button>
+                <button class="socials__button btn" aria-label="Instagram">
+                  <img
+                    class="socials__icon"
+                    src="assets/icons/instagram.svg"
+                    alt="Instagram icon" />
+                </button>
+              </div>
+            </div>
+
+            <div class="gallery__element">
+              <div class="gallery__img">
+                <img
+                  sizes="(max-width: 871px) 100vw, 871px"
+                  srcset="
+                    assets/photos/michael/michael,w_680.png 680w,
+                    assets/photos/michael/michael,w_739.png 739w,
+                    assets/photos/michael/michael,w_803.png 803w,
+                    assets/photos/michael/michael,w_857.png 857w,
+                    assets/photos/michael/michael,w_871.png 871w
+                  "
+                  src="michael,w_871.png"
+                  alt="Michael Fertig Photo" />
+              </div>
+
+              <div class="gallery__image-description">
+                <p>Michael Fertig</p>
+                <p>Developer</p>
+              </div>
+
+              <div class="socials">
+                <button class="socials__button btn" aria-label="Facebook">
+                  <img
+                    class="socials__icon"
+                    src="assets/icons/facebook.svg"
+                    alt="Facebook icon" />
+                </button>
+                <button class="socials__button btn" aria-label="Twitter">
+                  <img
+                    class="socials__icon"
+                    src="assets/icons/twitter.svg"
+                    alt="Twitter icon" />
+                </button>
+                <button class="socials__button btn" aria-label="Pintrest">
+                  <img
+                    class="socials__icon"
+                    src="assets/icons/pinterest.svg"
+                    alt="Pintrest icon" />
+                </button>
+                <button class="socials__button btn" aria-label="Instagram">
+                  <img
+                    class="socials__icon"
+                    src="assets/icons/instagram.svg"
+                    alt="Instagram icon" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <p class="footer__copyright">
+          © 2016 MoGo free PSD template by
+          <a class="footer__link" href="#">Laaqiq</a>
+        </p>
+
+        <div class="footer__subscribe-container">
+          <input type="text" placeholder="Your email" />
+          <button class="footer__btn btn btn--secondary">Subscribe</button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

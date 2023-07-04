@@ -1,0 +1,38 @@
+:root {
+  --pink: #f38181;
+  --yellow: #fce38a;
+  --white: #fff;
+  --green: #95e1d3;
+  --green-light: #eaffd0;
+  --gray: #999999;
+  --gray-dark: #333333;
+  --gray-light: #e5e5e5;
+
+  --primary-font: "Montserrat";
+  --secondary-font: "Kaushan Script";
+  --third-font: "Roboto";
+}
+
+//Colors
+$pink-color: var(--pink);
+$yellow-color: var(--yellow);
+$white-color: var(--white);
+$green-color: var(--green);
+$green-light-color: var(--green-light);
+$gray-color: var(--gray);
+$gray-dark-color: var(--gray-dark);
+$gray-light-color: var(--gray-light);
+
+$pink-yellow-gradient: linear-gradient(
+  0deg,
+  rgba(#fce38a, 0.9) 0%,
+  rgba(#f38181, 0.9) 100%
+);
+
+//Fonts
+$primary-font: var(--primary-font);
+$secondary-font: var(--secondary-font);
+$third-font: var(--third-font);
+
+//Other
+$default-transition: all 200ms;

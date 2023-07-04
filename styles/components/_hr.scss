@@ -1,0 +1,8 @@
+@use "../variables" as *;
+
+hr {
+  width: 60px;
+  height: 5px;
+  background-color: $pink-color;
+  border-radius: 10px;
+}

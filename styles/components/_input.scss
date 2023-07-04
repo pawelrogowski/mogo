@@ -1,0 +1,16 @@
+@use "../variables" as *;
+
+input {
+  padding: 13px 10px;
+  border: 2px solid $gray-light-color;
+  color: $gray-color;
+
+  &::placeholder {
+    font: italic 15px $third-font;
+    color: $gray-light-color;
+  }
+
+  &:focus {
+    outline: 1px solid $gray-color;
+  }
+}

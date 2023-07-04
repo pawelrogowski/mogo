@@ -1,0 +1,17 @@
+@use "../variables" as *;
+
+.about {
+  margin-top: 100px;
+
+  &__line {
+    margin: 40px auto;
+  }
+
+  &__paragraph {
+    width: min(950px, 95%);
+    margin-inline: auto;
+    font-size: 15px;
+    text-align: center;
+    color: $gray-color;
+  }
+}

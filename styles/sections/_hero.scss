@@ -1,0 +1,166 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.hero {
+  height: 100vh;
+  background: $pink-yellow-gradient,
+    url(../../../mogo/assets/photos/hero.jpg) no-repeat center / cover;
+  padding-top: 30px;
+
+  &__container {
+    @include flex(column, 20px, unset, space-between);
+
+    height: 100%;
+    padding-bottom: 50px;
+  }
+
+  &__slogan {
+    width: min(800px, 100%);
+    margin-inline: auto;
+
+    p {
+      color: $white-color;
+      text-align: center;
+
+      &:first-of-type {
+        font-size: clamp(32px, 6vw, 72px);
+        font-weight: 700;
+        font-family: $secondary-font;
+        margin-bottom: 20px;
+      }
+
+      &:last-of-type {
+        font-size: clamp(46px, 10vw, 130px);
+        font-weight: 700;
+        line-height: 0.8;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
+
+  &__btn {
+    margin-inline: auto;
+  }
+}
+
+.header {
+  @include flex(row, 50px, center, space-between);
+
+  color: $white-color;
+
+  &__logo {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &__menu-button {
+    display: none;
+    width: 20px;
+    z-index: 1000;
+
+    img {
+      width: 100%;
+
+      &:last-of-type {
+        display: none;
+      }
+    }
+  }
+}
+
+.nav {
+  &__list {
+    @include flex(row, 50px, center, space-between);
+  }
+
+  &__link {
+    &::after {
+      @include position(absolute, 120%, 0, 0 100%);
+
+      content: "";
+      width: 100%;
+      height: 3px;
+      background: $yellow-color;
+      border-radius: 20px;
+      transition: $default-transition;
+      scale: 0;
+    }
+
+    &:hover,
+    &:focus {
+      transition: $default-transition;
+      color: $yellow-color;
+      outline: none;
+
+      &:not(:has(.nav__icon))::after {
+        scale: 1;
+      }
+
+      .nav__icon {
+        filter: brightness(0) saturate(100%) invert(88%) sepia(82%)
+          saturate(400%) hue-rotate(321deg) brightness(102%) contrast(98%);
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  &__icons {
+    @include flex(row, 30px, center, space-between);
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.nav-open {
+  .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .header__menu-button img {
+    &:first-of-type {
+      display: none;
+    }
+
+    &:last-of-type {
+      display: block;
+    }
+  }
+}
+
+@media (width <= 960px) {
+  .header__menu-button {
+    display: block;
+  }
+
+  .nav {
+    @include position(absolute, 0, unset, unset, 0);
+    @include flex(row, 0, center, center);
+
+    width: 100%;
+    height: 100vh;
+    background-color: $pink-color;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    &__list {
+      @include flex(column, 50px, center, space-between);
+    }
+
+    &__item {
+      font-size: 18px;
+    }
+  }
+}

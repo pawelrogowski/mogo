@@ -1,0 +1,39 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.footer {
+  margin-top: 80px;
+
+  &__container {
+    @include flex(row, 20px, center, space-between);
+
+    padding: 25px 0 20px;
+    border-top: 2px solid $gray-light-color;
+  }
+
+  &__copyright {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  &__link {
+    color: $pink-color;
+  }
+
+  &__subscribe-container {
+    @include flex(row, 0, center);
+  }
+}
+
+@media (width <= 750px) {
+  .footer__container {
+    @include flex(column-reverse, 20px, center, space-between);
+  }
+}
+
+@media (width <= 450px) {
+  .footer__subscribe-container {
+    @include flex(column, 0, unset);
+  }
+}

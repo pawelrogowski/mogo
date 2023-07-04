@@ -1,0 +1,119 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.gallery {
+  @include flex(row, 30px);
+
+  margin-top: 90px;
+
+  &__element {
+    flex: 1;
+    position: relative;
+
+    &:hover {
+      .socials {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+
+      img:not(.socials__icon) {
+        translate: -10px -10px;
+      }
+
+      .gallery__img::after {
+        opacity: 1;
+        translate: -10px -10px;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 420px;
+    background-color: $green-color;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: $default-transition;
+    }
+
+    &--center {
+      object-position: 20%;
+    }
+
+    &::after {
+      @include position(absolute, 0, 0);
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: $pink-yellow-gradient;
+      opacity: 0;
+      transition: $default-transition;
+    }
+  }
+
+  &__image-description {
+    margin-top: 30px;
+    text-align: center;
+
+    p {
+      &:first-of-type {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $gray-dark-color;
+      }
+
+      &:last-of-type {
+        margin-top: 10px;
+        font: italic 15px $third-font;
+        color: $gray-color;
+      }
+    }
+  }
+}
+
+.socials {
+  @include position(absolute, 50%, 50%);
+  @include flex(row, 0, center, center);
+
+  translate: 50% -100%;
+  width: fit-content;
+  background-color: $yellow-color;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: $default-transition;
+
+  &__button {
+    padding: 15px;
+
+    &:not(:last-child) {
+      border-right: 1px solid $pink-color;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $pink-color;
+      outline: none;
+
+      .socials__icon {
+        filter: brightness(100);
+      }
+    }
+  }
+
+  &__icon {
+    width: 25px;
+  }
+}
+
+@media (width <= 960px) {
+  .gallery {
+    @include flex(column, 40px);
+  }
+}

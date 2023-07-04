@@ -1,0 +1,40 @@
+@use "../variables" as *;
+
+.btn {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: $default-transition;
+
+  &:active {
+    scale: 0.97;
+  }
+
+  &--primary {
+    border: 2px solid $white-color;
+    padding: 10px 30px;
+
+    &:hover,
+    &:focus {
+      background-color: $white-color;
+      color: $pink-color;
+      outline: none;
+    }
+  }
+
+  &--secondary {
+    background-color: $green-color;
+    padding: 15px 35px;
+
+    &:hover,
+    &:focus {
+      background-color: $yellow-color;
+      color: $pink-color;
+      outline: none;
+    }
+  }
+}
