@@ -103,6 +103,10 @@
         scale: 1;
       }
     }
+    &:focus svg {
+      fill: $yellow-color;
+      transition: $icon-transition;
+    }
   }
   &__icon {
     fill: $white-color;
@@ -112,6 +116,7 @@
     fill: $yellow-color;
     transition: $icon-transition;
   }
+
   &__icon:focus {
     fill: $yellow-color;
     transition: $icon-transition;

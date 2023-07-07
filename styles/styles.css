@@ -210,6 +210,10 @@ input:focus {
 .nav__link:hover:not(:has(.nav__icon))::after, .nav__link:focus:not(:has(.nav__icon))::after {
   scale: 1;
 }
+.nav__link:focus svg {
+  fill: var(--yellow);
+  transition: fill 200ms;
+}
 .nav__icon {
   fill: var(--white);
   transition: fill 200ms;
