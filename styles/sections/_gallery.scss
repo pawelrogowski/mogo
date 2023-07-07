@@ -109,6 +109,10 @@
 
   &__icon {
     width: 25px;
+    height: 25px;
+    fill: $pink-color;
+    outline: $pink-color;
+    transition: $icon-transition;
   }
 }
 
