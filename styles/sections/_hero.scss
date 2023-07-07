@@ -137,6 +137,7 @@
 .nav-open {
   .nav {
     opacity: 1;
+    position: fixed;
     pointer-events: auto;
     visibility: visible;
     transition: opacity 200ms;
@@ -151,6 +152,10 @@
       display: block;
     }
   }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 @media (width <= 960px) {
